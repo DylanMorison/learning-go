@@ -3,11 +3,28 @@ package main
 import "fmt"
 
 func main() {
-	n := 3.14
-	n = 13.7e72
-	n = 2.1e14
-	fmt.Printf("%v, %T", n, n)
+	s := "a"
+	fmt.Printf("%v, %T", s, s)
 }
+
+// func main() {
+// 	s := "This is a string"
+// 	b := []byte(s)
+// 	fmt.Printf("%v, %T", b, b)
+// }
+
+// func main() {
+// 	var n complex64 = 1 + 2i
+// 	fmt.Printf("%v, %T", real(n), real(n))
+// 	fmt.Printf("%v, %T", imag(n), imag(n))
+// }
+
+// func main() {
+// 	n := 3.14
+// 	n = 13.7e72
+// 	n = 2.1e14
+// 	fmt.Printf("%v, %T", n, n)
+// }
 
 // func main() {
 // 	a := 10             // 1010

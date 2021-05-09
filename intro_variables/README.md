@@ -91,3 +91,54 @@ func main() {
 	fmt.Printf("%v, %T\n", intToFloat, intToFloat)
 }
 ```
+
+Variable Types
+- Boolean
+  - T or F
+  - Not an alias for other types (e.g. int)
+  - Zero or False value
+- Numeric Types
+  - Integers
+    - Signed integers
+      - int type has varying size, but min 32 bits
+      - 8 bit (int 8) through 64 bit (int 64)
+    - Unsigned integers
+      - 8 bit (byte and unit8) through 32 bit (uint32)
+    - Arithmetic Operations
+      - Addition, subtraction, multiplication, division, remainder
+    - Bitwise operations
+      - And, or, xor, and not
+    - Cant mix types in same family! (uint16+uint32 = error)
+  - Floating Point Numbers
+    - Following IEEE-754 standard
+    - 32 and 64 bit versions
+    - Literal Styles
+      - Decimal (3.14)
+      - Exponential (13e18)
+      - Mixed (13.7e12)
+    - Arithmetic Operations
+      - Addition, subtraction, mult, div
+  - Complex Numbers
+      - Zero value is `0+0i`
+      - 64 and 128 bit versions
+      - Built in functions
+        - complex: makes complex num from two floats
+        - real: get real part as float
+        - imag: get imaginary part as float
+      - Arithmetic Operations
+      - Addition, subtraction, mult, div
+- Text Types
+  - Strings
+    - UTF-8
+    - Immutable
+    - Can be concatenated with plus (+) operator
+    - Can be converted to []byte
+  - Rune
+    - UTF-32
+    - Alias for int32
+    - Special methods normally required to process
+      - e.g. strings.Reader#ReadRune
+
+
+
+
