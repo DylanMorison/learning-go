@@ -119,3 +119,29 @@ remove first element from slice
 	b := a[1:]
 	fmt.Println(b)
 ```
+
+# Summary
+
+Arrays
+- Collections of items with the same type
+- Fixed size
+- Declaration styles
+  - `a := [3]int{1, 2, 3}`
+  - `a := [...]int{1, 2, 3}`
+  - `var a [3]int`
+- Access via zero-based index
+  - `a := [3]int {1, 3, 5} // a[0] == 3`
+- `len(arr) === length of arr`
+- Copies refer to different underlying data
+
+Slices
+- Backed by array
+- Creation Styles
+  - Slice existing arr or slice
+  - Literal Style
+  - Via make function
+- `len()`
+- `cap()`
+- `append()` to add elements to slice
+  - May cause expensive copy operation if underlying array is too small
+- Copies refer to same underlying array
