@@ -3,19 +3,25 @@ package main
 import "fmt"
 
 func main() {
-	a := []int{}
-	fmt.Println(a)      //[]
-	fmt.Println(len(a)) //0
-	fmt.Println(cap(a)) //0
-	a = append(a, 1)
-	fmt.Println(a)      //[1]
-	fmt.Println(len(a)) //1
-	fmt.Println(cap(a)) //1
-	a = append(a, 2, 3, 4, 5)
-	fmt.Println(a)      //[1 2 3 4 5]
-	fmt.Println(len(a)) //5
-	fmt.Println(cap(a)) //6
+	a := []int{1, 2, 3, 4, 5}
+	b := a[1:]
+	fmt.Println(b)
 }
+
+// func main() {
+// 	a := []int{}
+// 	fmt.Println(a)      //[]
+// 	fmt.Println(len(a)) //0
+// 	fmt.Println(cap(a)) //0
+// 	a = append(a, 1)
+// 	fmt.Println(a)      //[1]
+// 	fmt.Println(len(a)) //1
+// 	fmt.Println(cap(a)) //1
+// 	a = append(a, 2, 3, 4, 5)
+// 	fmt.Println(a)      //[1 2 3 4 5]
+// 	fmt.Println(len(a)) //5
+// 	fmt.Println(cap(a)) //6
+// }
 
 // func main() {
 // 	a := make([]int, 3, 100)

@@ -107,7 +107,15 @@ fmt.Println(cap(a)) //6
 a = append(a, []int{2, 3, 4, 5}...)
 ```
 
+remove last element from slice
+```go
+  a := []int{1, 2, 3, 4, 5}
+  b := [:len(a)-1]
+  fmt.Println(b)
+```
 remove first element from slice
 ```go
-
+	a := []int{1, 2, 3, 4, 5}
+	b := a[1:]
+	fmt.Println(b)
 ```
