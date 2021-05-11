@@ -1,34 +1,34 @@
 # Arrays
 ```go
-	// create an array called "firstArray" that has length 3
-	// and holds integers
-	firstArray := [3]int{1, 2, 3}
-	fmt.Printf("firstArray: %v, type: %T", firstArray, firstArray)
+// create an array called "firstArray" that has length 3
+// and holds integers
+firstArray := [3]int{1, 2, 3}
+fmt.Printf("firstArray: %v, type: %T", firstArray, firstArray)
 
-  // If initializing on declaration, this is allowed
-  // Creates an array just large enough to hold data
-  firstArray := [...]int{1, 2, 3}
+// If initializing on declaration, this is allowed
+// Creates an array just large enough to hold data
+firstArray := [...]int{1, 2, 3}
 
-  var students [3]string
-	fmt.Printf("Students: %v\n", students)
-	students[0] = "Lisa"
-	students[1] = "Dylan"
-	students[2] = "Tom"
-	fmt.Printf("Students: %v", students)
-	fmt.Printf("Students[1]: %v", students[1])
-  fmt.Printf("len(students): %v\n", len(students))
+var students [3]string
+fmt.Printf("Students: %v\n", students)
+students[0] = "Lisa"
+students[1] = "Dylan"
+students[2] = "Tom"
+fmt.Printf("Students: %v", students)
+fmt.Printf("Students[1]: %v", students[1])
+fmt.Printf("len(students): %v\n", len(students))
 
-  // Lets make the identity matrix!
-  var identityMatrix [3][3]int = [3][3]int{[3]int{1,0,0}, [3]int{0,1,0}, [3]int{0,0,1}}
+// Lets make the identity matrix!
+var identityMatrix [3][3]int = [3][3]int{[3]int{1,0,0}, [3]int{0,1,0}, [3]int{0,0,1}}
 
-  // or 
-  var identityMatrix [3][3]int = [3][3]int{{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}
+// or 
+var identityMatrix [3][3]int = [3][3]int{{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}
 
-  // or
-  var identityMatrix [3][3]int
-  identityMatrix[0] = [3]int{1,0,0}
-  identityMatrix[1] = [3]int{0,1,0}
-  identityMatrix[2] = [3]int{0,0,1}
+// or
+var identityMatrix [3][3]int
+identityMatrix[0] = [3]int{1,0,0}
+identityMatrix[1] = [3]int{0,1,0}
+identityMatrix[2] = [3]int{0,0,1}
 ```
 
 In **go** arrays are actually considered **values**. In other languages arrays are **pointing** to values in memory. This is incredibly important when copying an array in **go**, as you are actually creating an entirely *new* value in memory. So if you change the copied array the original array will not be affected.
