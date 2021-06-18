@@ -30,32 +30,32 @@ func main() {
 // 	fmt.Println(cap(a)) //100
 // }
 
-// func main() {
-// 	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-// 	b := a[:]
-// 	c := a[3:]
-// 	d := a[:6]
-// 	e := a[3:6]
-// 	fmt.Println(a)
-// 	fmt.Println(b)
-// 	fmt.Println(c)
-// 	fmt.Println(d)
-// 	fmt.Println(e)
-// }
+func main() {
+	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	b := a[:]
+	c := a[3:]
+	d := a[:6]
+	e := a[3:6]
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Println(d)
+	fmt.Println(e)
+}
 
-// func main() {
-// 	a := []int{1, 2, 3}
-// 	fmt.Println(len(a)) //3
-// 	fmt.Println(cap(a)) //3
-// }
+func main() {
+	a := []int{1, 2, 3}
+	fmt.Println(len(a)) //3
+	fmt.Println(cap(a)) //3
+}
 
-// func main() {
-// 	a := []int{1, 2, 3}
-// 	// b := &a
-// 	// b[1] = 5
-// 	fmt.Println(a)
-// 	// fmt.Println(b)
-// }
+func main() {
+	a := []int{1, 2, 3}
+	// b := &a
+	// b[1] = 5
+	fmt.Println(a)
+	// fmt.Println(b)
+}
 
 // func main() {
 // 	a := [...]int{1, 2, 3}
