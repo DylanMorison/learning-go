@@ -10,12 +10,12 @@ func main() {
 		"white": "#FFF",
 	}
 
-	fmt.Println(colors)
+	printMap(colors)
 
 }
 
 func printMap(c map[string]string) {
-	for i, v := range c {
-		
+	for color, hex := range c {
+		fmt.Println("Hex code for", color, "is", hex)
 	}
 }
