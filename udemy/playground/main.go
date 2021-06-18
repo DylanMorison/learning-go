@@ -3,10 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	bill := "hi"
-	fmt.Println(&bill)
+	name := "bill"
+
+	namePointer := &name
+
+	fmt.Println(&namePointer)
+	printPointer(namePointer)
 }
 
+func printPointer(namePointer *string) {
+	fmt.Println(&namePointer)
+} // package main
+
+// import "fmt"
+
+// func main() {
+// 	bill := "hi"
+// 	fmt.Println(&bill)
+// }
 
 // package main
 
