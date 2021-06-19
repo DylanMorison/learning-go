@@ -8,3 +8,7 @@ when to worry abt pointers & when to not worry abt pointers:
 when to use maps vs structs
 
 <img src="./assets/structVsMap.png">
+
+<img src="./assets/interfaces.png">
+
+<img src="./assets/blah.png">

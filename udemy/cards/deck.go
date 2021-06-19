@@ -73,7 +73,7 @@ func (d deck) shuffle() {
 		// then take whatever is at i, and assign it to newPosition
 		d[i], d[newPosition] = d[newPosition], d[i]
 	}
-  
+}
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
