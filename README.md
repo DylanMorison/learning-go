@@ -1,3 +1,3 @@
 # Learning Go
 
-<img src="./assets/golang.png">
+<img src=".udemy/assets/golang.png">
