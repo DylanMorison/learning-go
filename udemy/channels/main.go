@@ -37,17 +37,16 @@ func main() {
 	// whenever a value comes out to it, assign it to l
 	// then body of for loop is instantly started
 	// for l := range c {
-	// 	time.Sleep(time.Second)  
+	// 	time.Sleep(time.Second)
 	// 	go checkLink(l, c)
 	// }
 
 	for l := range c {
-		go func () {
+		go func(link string) {
 			time.Sleep(5 * time.Second)
-			checkLink(l, c)
-		}()
+			checkLink(link, c)
+		}(l)
 	}
-
 }
 
 func checkLink(link string, c chan string) {
