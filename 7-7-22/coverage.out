@@ -1,0 +1,9 @@
+mode: set
+github.com/DylanMorison/myNiceProgram/json.go:15.13,29.16 4 0
+github.com/DylanMorison/myNiceProgram/json.go:33.2,33.46 1 0
+github.com/DylanMorison/myNiceProgram/json.go:29.16,31.3 1 0
+github.com/DylanMorison/myNiceProgram/main.go:13.39,16.2 2 0
+github.com/DylanMorison/myNiceProgram/main.go:18.44,21.12 2 1
+github.com/DylanMorison/myNiceProgram/main.go:24.2,25.20 2 1
+github.com/DylanMorison/myNiceProgram/main.go:21.12,23.3 1 1
+github.com/DylanMorison/myNiceProgram/main.go:29.13,39.2 1 0
